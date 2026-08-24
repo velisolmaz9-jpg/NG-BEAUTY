@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img" aria-label="REALISATION - gallery-3.jpg">
+  <defs>
+    <linearGradient id="bgg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#231d16"/>
+      <stop offset="55%" stop-color="#171310"/>
+      <stop offset="100%" stop-color="#0f0d0a"/>
+    </linearGradient>
+    <radialGradient id="glowg3" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#caa96a" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#caa96a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bgg3)"/>
+  <rect width="900" height="1200" fill="url(#glowg3)"/>
+  <rect x="18" y="18" width="864" height="1164" fill="none" stroke="#caa96a" stroke-opacity="0.45" stroke-width="1"/>
+  <g transform="translate(450 480)" stroke="#caa96a" stroke-opacity="0.85" fill="none" stroke-width="2" stroke-linecap="round">
+    <path d="M -34 6 Q 0 -30 34 6"/>
+    <path d="M -26 4 L -32 -14"/>
+    <path d="M -13 -6 L -16 -26"/>
+    <path d="M 0 -9 L 0 -30"/>
+    <path d="M 13 -6 L 16 -26"/>
+    <path d="M 26 4 L 32 -14"/>
+  </g>
+  <text x="50%" y="840" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="2" fill="#e9dfc9" fill-opacity="0.75">REALISATION</text>
+  <text x="50%" y="866" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="1.5" fill="#e9dfc9" fill-opacity="0.4">gallery-3.jpg</text>
+</svg>
