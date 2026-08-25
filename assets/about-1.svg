@@ -21,6 +21,5 @@
     <path d="M 13 -6 L 16 -26"/>
     <path d="M 26 4 L 32 -14"/>
   </g>
-  <text x="50%" y="770" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="2" fill="#e9dfc9" fill-opacity="0.75">NG BEAUTY</text>
-  <text x="50%" y="796" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="1.5" fill="#e9dfc9" fill-opacity="0.4">PHOTO STUDIO A REMPLACER — about-1.jpg</text>
+    <text x="50%" y="770" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="1.5" fill="#e9dfc9" fill-opacity="0.5">PHOTO STUDIO A REMPLACER — about-1.jpg</text>
 </svg>
