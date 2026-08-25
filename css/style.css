@@ -1059,14 +1059,6 @@ section {
   margin-top: clamp(2.6rem, 5vw, 4rem);
 }
 
-.prestations-illustration-note {
-  margin-top: clamp(2rem, 4vw, 2.8rem);
-  font-size: 0.78rem;
-  font-style: italic;
-  color: rgba(247, 242, 234, 0.6);
-  text-align: center;
-}
-
 .prestations-footer {
   margin-top: clamp(2rem, 4vw, 2.8rem);
   display: flex;
@@ -1579,12 +1571,6 @@ section {
   font-size: 1.02rem;
   color: var(--ivory);
   margin-top: 0.9rem;
-}
-
-.review-placeholder {
-  color: rgba(247, 242, 234, 0.62);
-  font-size: 0.8rem;
-  font-style: italic;
 }
 
 .reviews-track-wrap {

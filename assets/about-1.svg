@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100" role="img" aria-label="NG BEAUTY - PHOTO STUDIO A REMPLACER — about-1.jpg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100" role="img" aria-label="NG BEAUTY">
   <defs>
     <linearGradient id="bgabout1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#231d16"/>
@@ -21,5 +21,4 @@
     <path d="M 13 -6 L 16 -26"/>
     <path d="M 26 4 L 32 -14"/>
   </g>
-    <text x="50%" y="770" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="1.5" fill="#e9dfc9" fill-opacity="0.5">PHOTO STUDIO A REMPLACER — about-1.jpg</text>
 </svg>

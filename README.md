@@ -44,11 +44,11 @@ Le logo NG BEAUTY fourni par le client est l'asset de marque utilisé partout su
 
 Ces fichiers sont générés à partir du logo original fourni (recadrage et, pour les variantes « white », une recoloration du texte noir en ivoire afin de rester lisible sur fond sombre — le dessin, les proportions et la couleur or ne sont jamais modifiés). Si le logo évolue, il suffit de remplacer `assets/logo.png` (fond transparent, couleurs d'origine) et de régénérer les variantes claires/sombres et le favicon à partir de ce nouveau fichier.
 
-## Visuels des prestations (à remplacer par de vraies photos)
+## Visuels des prestations, galerie et CTA final (visuels illustratifs)
 
-Les cartes de la section « Nos prestations » (accueil et `prestations.html`) utilisent 7 photos — une par prestation — recadrées depuis la planche de référence fournie par le client :
+Les cartes de la section « Nos prestations » (accueil et `prestations.html`), la mosaïque « Réalisations » (`gallery.html`), le collage de l'accueil et le visuel de la section de réservation finale utilisent des photos recadrées depuis la planche de référence beauté fournie par le client :
 
-| Fichier | Prestation |
+| Fichier | Contenu |
 |---|---|
 | `assets/prestation-rehaussement.jpg` | Rehaussement de cils + teinture |
 | `assets/prestation-megavolume.jpg` | Remplissage méga volume russe |
@@ -57,33 +57,36 @@ Les cartes de la section « Nos prestations » (accueil et `prestations.html`) u
 | `assets/prestation-depose.jpg` | Dépose + shampooing |
 | `assets/prestation-blanchiment.jpg` | Blanchiment dentaire — 1 séance |
 | `assets/prestation-blanchiment-2.jpg` | Blanchiment dentaire — 2 séances |
+| `assets/gallery-1.jpg` à `gallery-9.jpg` | Mosaïque « Réalisations », collage d'accueil |
+| `assets/final-cta-bleed.jpg` | Visuel vertical de la section de réservation finale |
 
-⚠️ **Ce sont des visuels générés par IA, fournis à titre d'illustration** — ce ne sont ni des photos de clientes NG BEAUTY, ni des réalisations réelles du studio. Un mentionnaire discret (« Visuels illustratifs présentés à titre indicatif ») est affiché sous les deux sections. Remplacez ces fichiers par de vraies photos du studio dès que possible, en conservant les mêmes noms (portrait ou carré, min. 900×900).
+⚠️ **Ce sont des visuels génériques d'illustration, recadrés depuis la planche de référence** — ce ne sont ni des photos de clientes NG BEAUTY, ni des réalisations réelles du studio. Ils sont signalés comme tels via l'attribut `alt` de chaque image (« — visuel illustratif »), sans mention visible intrusive sur la page. Remplacez ces fichiers par de vraies photos du studio dès que possible, en conservant les mêmes noms.
+
+La galerie ne contient plus de vignette vidéo factice : la case autrefois occupée par `gallery-video-1.svg` est désormais une photo (`gallery-3.jpg`). Une vraie vidéo verticale pourra être ajoutée plus tard sur n'importe quelle case de la mosaïque en utilisant `data-lightbox="video"` (déjà géré par `js/script.js`).
 
 ## ⚠️ À compléter avant mise en ligne
 
-Aucune information (tarif, horaire, avis) n'a été inventée : seules les données transmises ont été utilisées. Les éléments suivants sont en **placeholder** et doivent être remplacés :
+Aucune information (tarif, horaire, avis) n'a été inventée : seules les données transmises ont été utilisées. Les éléments suivants restent en **placeholder** et doivent être remplacés :
 
-### 1. Photos et vidéos
+### 1. Photos et vidéos encore en placeholder abstrait
 
-Tous les visuels sont actuellement des placeholders SVG (fond sombre, encadré doré). Remplacez les fichiers suivants dans `assets/` par de vraies photos/vidéos, **en conservant le même nom de fichier** (ou mettez à jour le `src` correspondant dans le HTML) :
+Ces trois visuels restent des graphismes abstraits sans photo (fond sombre, encadré doré, motif de cil stylisé) — aucune image stock ni générée n'a été utilisée à leur place :
 
 | Fichier à remplacer | Utilisé pour | Format conseillé |
 |---|---|---|
-| `assets/hero-portrait-wide.svg` → `.jpg` | Visuel principal du hero (page d'accueil) | Paysage, min. 1800×1100 |
+| `assets/hero-portrait-wide.svg` → `.jpg` | Visuel principal du hero (page d'accueil) — nécessite une vraie photo haute résolution | Paysage, min. 1800×1100 |
 | `assets/about-1.svg` → `.jpg` | Photo du studio | Portrait, min. 1000×1200 |
 | `assets/about-2.svg` → `.jpg` | Portrait de Nisa | Portrait, min. 1000×1200 |
-| `assets/gallery-1.svg` à `gallery-9.svg` → `.jpg` | Mosaïque « Réalisations », collage d'accueil et cartes « Prestations » | Carré ou portrait, min. 900×900 |
-| `assets/gallery-video-1.svg` → `.mp4` | Vidéo verticale dans la galerie | Vertical 9:16 |
-| `assets/avatar-1.svg` à `avatar-3.svg` → `.jpg` | Photos rondes (avis clientes, mini-stack du hero) | Carré, min. 300×300 |
-| `assets/final-cta-bleed.svg` → `.jpg` | Visuel de la section de réservation finale | Portrait, min. 900×1050 |
-| `assets/og-image.svg` → `.jpg` | Image de partage réseaux sociaux | 1200×630 |
 
-Si vous passez en `.jpg`/`.mp4`, pensez à mettre à jour l'extension dans les balises `src=""` et `data-src=""` correspondantes.
+⚠️ **`about-2.svg` (portrait de Nisa) : ne jamais remplacer par une photo stock, ni par une image générée censée représenter Nisa.** Seule une vraie photo de Nisa doit être utilisée ici. En attendant, le graphisme reste volontairement abstrait (aucun visage, réel ou généré).
+
+Si vous passez en `.jpg`, pensez à mettre à jour l'extension dans les balises `src=""` correspondantes.
+
+Les photos rondes (`assets/avatar-1.svg` à `avatar-3.svg`, utilisées pour les avis clientes) restent également des icônes abstraites neutres et peuvent être remplacées par de vraies photos de profil si les clientes concernées donnent leur accord — sinon, conservez une présentation neutre.
 
 ### 2. Avis clients
 
-Les avis affichés sur `index.html` (section « Elles nous font confiance ») sont des emplacements `[Avis à insérer depuis Planity]`. Remplacez-les par les avis réels visibles sur la fiche Planity, avec le prénom de la cliente si disponible.
+Les 7 avis affichés sur `index.html` (section « Elles en parlent mieux que nous ») sont les avis réels récupérés depuis la fiche Planity du studio, retranscrits tels quels (texte et emoji d'origine), avec une présentation neutre (« Cliente vérifiée », sans nom ni date ni avatar inventés). D'autres avis réels existent sur la fiche Planity au-delà de ces 7 ; ajoutez-les dans le même carrousel au fur et à mesure si vous voulez les afficher tous.
 
 ### 3. Mentions légales, confidentialité, CGV
 
