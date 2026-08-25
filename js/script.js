@@ -31,22 +31,29 @@ function initMobileNav() {
   const mobileNav = document.querySelector(".mobile-nav");
   if (!toggleBtn || !mobileNav) return;
 
-  const close = () => {
-    toggleBtn.classList.remove("is-active");
-    mobileNav.classList.remove("is-open");
-    toggleBtn.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("nav-open");
+  mobileNav.setAttribute("aria-hidden", "true");
+
+  const setState = (isOpen) => {
+    toggleBtn.classList.toggle("is-active", isOpen);
+    mobileNav.classList.toggle("is-open", isOpen);
+    toggleBtn.setAttribute("aria-expanded", String(isOpen));
+    toggleBtn.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
+    mobileNav.setAttribute("aria-hidden", String(!isOpen));
+    document.body.classList.toggle("nav-open", isOpen);
   };
 
+  const close = () => setState(false);
+
   toggleBtn.addEventListener("click", () => {
-    const isOpen = mobileNav.classList.toggle("is-open");
-    toggleBtn.classList.toggle("is-active", isOpen);
-    toggleBtn.setAttribute("aria-expanded", String(isOpen));
-    document.body.classList.toggle("nav-open", isOpen);
+    setState(!mobileNav.classList.contains("is-open"));
   });
 
   mobileNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", close);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && mobileNav.classList.contains("is-open")) close();
   });
 }
 
