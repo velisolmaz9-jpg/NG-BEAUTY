@@ -44,6 +44,22 @@ Le logo NG BEAUTY fourni par le client est l'asset de marque utilisé partout su
 
 Ces fichiers sont générés à partir du logo original fourni (recadrage et, pour les variantes « white », une recoloration du texte noir en ivoire afin de rester lisible sur fond sombre — le dessin, les proportions et la couleur or ne sont jamais modifiés). Si le logo évolue, il suffit de remplacer `assets/logo.png` (fond transparent, couleurs d'origine) et de régénérer les variantes claires/sombres et le favicon à partir de ce nouveau fichier.
 
+## Visuels des prestations (à remplacer par de vraies photos)
+
+Les cartes de la section « Nos prestations » (accueil et `prestations.html`) utilisent 7 photos — une par prestation — recadrées depuis la planche de référence fournie par le client :
+
+| Fichier | Prestation |
+|---|---|
+| `assets/prestation-rehaussement.jpg` | Rehaussement de cils + teinture |
+| `assets/prestation-megavolume.jpg` | Remplissage méga volume russe |
+| `assets/prestation-volumerusse.jpg` | Remplissage russe |
+| `assets/prestation-mixte.jpg` | Remplissage mixte |
+| `assets/prestation-depose.jpg` | Dépose + shampooing |
+| `assets/prestation-blanchiment.jpg` | Blanchiment dentaire — 1 séance |
+| `assets/prestation-blanchiment-2.jpg` | Blanchiment dentaire — 2 séances |
+
+⚠️ **Ce sont des visuels générés par IA, fournis à titre d'illustration** — ce ne sont ni des photos de clientes NG BEAUTY, ni des réalisations réelles du studio. Un mentionnaire discret (« Visuels illustratifs présentés à titre indicatif ») est affiché sous les deux sections. Remplacez ces fichiers par de vraies photos du studio dès que possible, en conservant les mêmes noms (portrait ou carré, min. 900×900).
+
 ## ⚠️ À compléter avant mise en ligne
 
 Aucune information (tarif, horaire, avis) n'a été inventée : seules les données transmises ont été utilisées. Les éléments suivants sont en **placeholder** et doivent être remplacés :

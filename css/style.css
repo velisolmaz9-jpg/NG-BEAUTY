@@ -859,16 +859,27 @@ section {
 
 .service-card {
   scroll-snap-align: start;
-  flex: 0 0 clamp(230px, 26vw, 290px);
+  flex: 0 0 clamp(240px, 26vw, 300px);
   position: relative;
+  background: var(--black-soft);
+  border: 1px solid var(--gold-soft);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  transition: border-color 0.5s var(--ease), box-shadow 0.5s var(--ease),
+    transform 0.5s var(--ease), opacity 0.9s var(--ease);
+}
+
+.service-card:hover,
+.service-card:focus-within {
+  border-color: var(--gold-light);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  transform: translateY(-4px);
 }
 
 .service-card-media {
   position: relative;
-  border-radius: var(--radius-card);
   overflow: hidden;
-  aspect-ratio: 3 / 3.6;
-  margin-bottom: 1rem;
+  aspect-ratio: 3 / 3.15;
 }
 
 .service-card-media img {
@@ -886,42 +897,86 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(20, 17, 13, 0.75) 0%, rgba(20, 17, 13, 0) 55%);
+  background: linear-gradient(0deg, rgba(20, 17, 13, 0.6) 0%, rgba(20, 17, 13, 0) 45%);
 }
 
 .service-card-tag {
   position: absolute;
-  top: 0.9rem;
-  left: 0.9rem;
+  top: 0.8rem;
+  left: 0.8rem;
   z-index: 1;
-  background: rgba(250, 248, 243, 0.92);
-  color: var(--ink);
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
+  background: rgba(20, 17, 13, 0.82);
+  border: 1px solid rgba(203, 163, 116, 0.5);
+  color: var(--gold-light);
+  font-size: 0.63rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 0.35rem 0.8rem;
+  padding: 0.32rem 0.75rem;
   border-radius: var(--radius-full);
 }
 
-.service-card-price {
-  position: absolute;
-  bottom: 0.9rem;
-  right: 0.9rem;
-  z-index: 1;
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  color: var(--gold-light);
+.service-card-body {
+  padding: 1.2rem 1.3rem 1.4rem;
 }
 
 .service-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.35rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: var(--cream);
 }
 
 .service-card p {
-  font-size: 0.85rem;
-  color: rgba(247, 242, 234, 0.62);
-  margin-bottom: 0.7rem;
+  font-size: 0.83rem;
+  line-height: 1.55;
+  color: rgba(247, 242, 234, 0.6);
+  margin-bottom: 1.1rem;
+  min-height: 2.6em;
+}
+
+.service-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding-top: 0.9rem;
+  margin-bottom: 0.9rem;
+  border-top: 1px solid var(--black-line);
+}
+
+.service-card-price {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--gold-light);
+}
+
+.service-card-book {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  transition: color 0.35s var(--ease), gap 0.35s var(--ease);
+}
+
+.service-card-book svg {
+  width: 13px;
+  height: 13px;
+  transition: transform 0.35s var(--ease);
+}
+
+.service-card:hover .service-card-book,
+.service-card:focus-within .service-card-book {
+  color: var(--gold);
+}
+
+.service-card:hover .service-card-book svg,
+.service-card:focus-within .service-card-book svg {
+  transform: translateX(4px);
 }
 
 .carousel-controls {
@@ -981,128 +1036,51 @@ section {
 
 /* ---------- Prestations detail (prestations.html) ---------- */
 .prestations {
-  background: var(--cream);
+  background: var(--black);
+  color: var(--ivory);
 }
 
-.service-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.3rem 1.2rem;
-  padding: 1.7rem 0.6rem;
-  border-bottom: 1px solid rgba(34, 28, 20, 0.12);
-  border-radius: var(--radius-full);
-  transition: padding-left 0.4s var(--ease), background-color 0.4s var(--ease), border-color 0.4s var(--ease);
-}
-
-.service-row:first-child {
-  border-top: 1px solid rgba(34, 28, 20, 0.12);
-}
-
-.service-row:hover {
-  padding-left: 1.2rem;
-  background: rgba(184, 150, 95, 0.07);
-  border-color: var(--gold-soft);
-}
-
-.service-main {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.3rem 1.2rem;
-  flex: 1;
-  min-width: 0;
-}
-
-.service-name {
-  font-family: var(--font-serif);
-  font-size: 1.22rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.service-dots {
-  flex: 1;
-  border-bottom: 1px dotted rgba(34, 28, 20, 0.25);
-  margin-bottom: 0.4rem;
-  min-width: 20px;
-}
-
-.service-desc {
-  flex-basis: 100%;
-  font-size: 0.87rem;
-  color: var(--ink-soft);
-  max-width: 52ch;
-}
-
-.service-meta {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  flex-shrink: 0;
-}
-
-.service-price {
-  font-family: var(--font-serif);
-  font-size: 1.28rem;
-  color: var(--gold-deep);
-  white-space: nowrap;
-}
-
-.service-book {
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gold-deep);
-  opacity: 0;
-  transform: translateX(-6px);
-  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.service-row:hover .service-book,
-.service-row:focus-within .service-book {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.service-book svg {
-  width: 12px;
-  height: 12px;
-  transition: transform 0.35s var(--ease);
-}
-
-.service-row:hover .service-book svg {
-  transform: translateX(3px);
-}
-
-.service-group + .service-group {
-  margin-top: clamp(2.4rem, 5vw, 3.6rem);
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: clamp(1.2rem, 2.5vw, 1.8rem);
 }
 
 .service-group-title {
   font-size: 0.78rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--gold-deep);
-  margin-bottom: 0.6rem;
-  padding-left: 0.6rem;
+  color: var(--gold-light);
+  margin-bottom: 1.1rem;
+  padding-left: 0.2rem;
+}
+
+.service-group-title-spaced {
+  margin-top: clamp(2.6rem, 5vw, 4rem);
+}
+
+.prestations-illustration-note {
+  margin-top: clamp(2rem, 4vw, 2.8rem);
+  font-size: 0.78rem;
+  font-style: italic;
+  color: rgba(247, 242, 234, 0.6);
+  text-align: center;
 }
 
 .prestations-footer {
-  margin-top: clamp(2.4rem, 5vw, 3.6rem);
+  margin-top: clamp(2rem, 4vw, 2.8rem);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  padding-top: clamp(2rem, 4vw, 2.8rem);
+  border-top: 1px solid var(--black-line);
 }
 
 .prestations-note {
   font-size: 0.85rem;
-  color: var(--ink-soft);
+  color: rgba(247, 242, 234, 0.6);
   max-width: 46ch;
 }
 
