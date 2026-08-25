@@ -41,11 +41,13 @@ Tous les visuels sont actuellement des placeholders SVG (fond sombre, encadré d
 
 | Fichier à remplacer | Utilisé pour | Format conseillé |
 |---|---|---|
-| `assets/hero-portrait.svg` → `.jpg` | Visuel principal du hero (page d'accueil) | Portrait, min. 1200×1500 |
-| `assets/about-1.svg` → `.jpg` | Photo du studio | Paysage, min. 1200×1000 |
-| `assets/about-2.svg` → `.jpg` | Portrait de Nisa | Portrait, min. 900×1100 |
-| `assets/gallery-1.svg` à `gallery-9.svg` → `.jpg` | Mosaïque « Réalisations » | Carré ou portrait, min. 900×900 |
+| `assets/hero-portrait-wide.svg` → `.jpg` | Visuel principal du hero (page d'accueil) | Paysage, min. 1800×1100 |
+| `assets/about-1.svg` → `.jpg` | Photo du studio | Portrait, min. 1000×1200 |
+| `assets/about-2.svg` → `.jpg` | Portrait de Nisa | Portrait, min. 1000×1200 |
+| `assets/gallery-1.svg` à `gallery-9.svg` → `.jpg` | Mosaïque « Réalisations », collage d'accueil et cartes « Prestations » | Carré ou portrait, min. 900×900 |
 | `assets/gallery-video-1.svg` → `.mp4` | Vidéo verticale dans la galerie | Vertical 9:16 |
+| `assets/avatar-1.svg` à `avatar-3.svg` → `.jpg` | Photos rondes (avis clientes, mini-stack du hero) | Carré, min. 300×300 |
+| `assets/final-cta-bleed.svg` → `.jpg` | Visuel de la section de réservation finale | Portrait, min. 900×1050 |
 | `assets/og-image.svg` → `.jpg` | Image de partage réseaux sociaux | 1200×630 |
 
 Si vous passez en `.jpg`/`.mp4`, pensez à mettre à jour l'extension dans les balises `src=""` et `data-src=""` correspondantes.

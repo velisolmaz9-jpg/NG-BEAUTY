@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="NG BEAUTY - PHOTO HERO A REMPLACER — hero-portrait.jpg">
+  <defs>
+    <linearGradient id="bgherow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#231d16"/>
+      <stop offset="55%" stop-color="#171310"/>
+      <stop offset="100%" stop-color="#0f0d0a"/>
+    </linearGradient>
+    <radialGradient id="glowherow" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#caa96a" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#caa96a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bgherow)"/>
+  <rect width="1600" height="1000" fill="url(#glowherow)"/>
+  <rect x="18" y="18" width="1564" height="964" fill="none" stroke="#caa96a" stroke-opacity="0.45" stroke-width="1"/>
+  <g transform="translate(800 400)" stroke="#caa96a" stroke-opacity="0.85" fill="none" stroke-width="2" stroke-linecap="round">
+    <path d="M -34 6 Q 0 -30 34 6"/>
+    <path d="M -26 4 L -32 -14"/>
+    <path d="M -13 -6 L -16 -26"/>
+    <path d="M 0 -9 L 0 -30"/>
+    <path d="M 13 -6 L 16 -26"/>
+    <path d="M 26 4 L 32 -14"/>
+  </g>
+  <text x="50%" y="700" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="2" fill="#e9dfc9" fill-opacity="0.75">NG BEAUTY</text>
+  <text x="50%" y="726" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="1.5" fill="#e9dfc9" fill-opacity="0.4">PHOTO HERO A REMPLACER — hero-portrait.jpg</text>
+</svg>

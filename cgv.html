@@ -18,24 +18,29 @@
 </head>
 <body>
 
-<header class="site-header solid">
+<header class="site-header" id="top">
   <div class="container">
-    <a href="index.html" class="brand" aria-label="NG BEAUTY — Accueil">
-      <img src="assets/logo-white.svg" alt="NG BEAUTY">
-    </a>
-    <nav class="main-nav" aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
-      <a href="prestations.html">Prestations</a>
-      <a href="about.html">À propos</a>
-      <a href="gallery.html">Réalisations</a>
-      <a href="index.html#avis">Avis</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="header-cta">
-      <a href="https://www.planity.com/ng-beauty-annecy" target="_blank" rel="noopener" class="btn btn-primary btn-pulse">Prendre rendez-vous</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="header-bar">
+      <a href="index.html" class="brand" aria-label="NG BEAUTY — Accueil">
+        <img src="assets/logo-white.svg" alt="NG BEAUTY">
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="prestations.html">Prestations</a>
+        <a href="about.html">À propos</a>
+        <a href="gallery.html">Réalisations</a>
+        <a href="index.html#avis">Avis</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="https://www.planity.com/ng-beauty-annecy" target="_blank" rel="noopener" class="btn btn-primary btn-pulse">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          Prendre rendez-vous
+        </a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </div>
 </header>
@@ -82,38 +87,32 @@
 
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
+    <div class="footer-row">
       <div class="footer-brand">
         <img src="assets/logo-white.svg" alt="NG BEAUTY">
-        <p>Beauty Studio — Beauté du regard &amp; extensions de cils à Annecy / Seynod.</p>
+        <span>Beauty Studio</span>
       </div>
-      <div class="footer-col">
-        <h4>Studio</h4>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="prestations.html">Prestations</a></li>
-          <li><a href="about.html">À propos</a></li>
-          <li><a href="gallery.html">Réalisations</a></li>
-        </ul>
+      <div class="footer-info">
+        <span class="footer-info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+          215 Av. d'Aix-les-Bains, 74600 Seynod — Annecy
+        </span>
+        <span class="footer-info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          Lun — Ven · 9h00 – 17h00
+        </span>
+        <a href="https://www.instagram.com/ngbeauty._/" target="_blank" rel="noopener" class="footer-info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @ngbeauty._
+        </a>
       </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><p>215 avenue d'Aix-les-Bains<br>74600 Annecy — Seynod</p></li>
-          <li><a href="contact.html">Nous contacter</a></li>
-          <li><a href="https://www.instagram.com/ngbeauty._/" target="_blank" rel="noopener">@ngbeauty._</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Réservation</h4>
-        <ul>
-          <li><a href="https://www.planity.com/ng-beauty-annecy" target="_blank" rel="noopener">Planity</a></li>
-        </ul>
-      </div>
+      <a href="#top" class="back-to-top" aria-label="Retour en haut de page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span data-year></span> NG BEAUTY — Tous droits réservés.</p>
-      <div style="display:flex; gap:1.4rem;">
+      <p>&copy; <span data-year></span> NG BEAUTY — Tous droits réservés · <a href="https://www.planity.com/ng-beauty-annecy" target="_blank" rel="noopener">Planity</a></p>
+      <div class="footer-legal-links">
         <a href="legal.html">Mentions légales</a>
         <a href="privacy.html">Politique de confidentialité</a>
         <a href="cgv.html">CGV</a>
