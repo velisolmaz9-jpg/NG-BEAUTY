@@ -1868,7 +1868,7 @@ section {
   .final-cta-bullets { justify-content: center; }
   .final-cta-media { max-width: 360px; margin: 0 auto; }
   .collage-grid { grid-template-columns: 1fr; }
-  .collage { max-width: 480px; margin: 0 auto; }
+  .collage { width: 100%; max-width: 480px; margin: 0 auto; }
   .hero-proof { display: none; }
 }
 
