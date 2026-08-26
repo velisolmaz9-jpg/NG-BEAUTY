@@ -1934,8 +1934,7 @@ section {
 
   .hero { align-items: flex-end; padding-bottom: 4rem; }
   .hero-side-label { display: none; }
-  .trust-bar { border-radius: 16px; }
-  .trust-list { flex-direction: column; gap: 1.2rem; }
+  .trust-bar { display: none; }
 
   .service-row { border-radius: 12px; }
 
