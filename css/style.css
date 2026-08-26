@@ -1929,6 +1929,17 @@ section {
   .footer-info { gap: 1rem 1.6rem; }
 }
 
+/* Hero mobile : logo agrandi et centré au-dessus du titre (au lieu du
+   petit logo aligné à gauche utilisé sur tablette/desktop). */
+@media (max-width: 767px) {
+  .hero-logo {
+    display: block;
+    width: min(62vw, 260px);
+    height: auto;
+    margin: 0 auto 1.6rem;
+  }
+}
+
 @media (max-width: 640px) {
   .btn { white-space: normal; text-align: center; }
 
